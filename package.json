@@ -1,0 +1,41 @@
+{
+  "name": "znet",
+  "version": "1.0.0",
+  "description": "Znet",
+  "main": "",
+  "scripts": {},
+  "author": "Stacey Blaschke",
+  "license": "ISC",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "Opera > 45"
+  ],
+  "devDependencies": {
+    "bourbon": "^4.3.4",
+    "fs-extra": "^4.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-changed": "^3.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5",
+    "json-file": "^0.1.0",
+    "node-fs": "^0.1.7",
+    "tiny-lr": "^1.0.5"
+  },
+  "dependencies": {
+    "bower": "^1.8.0"
+  }
+}

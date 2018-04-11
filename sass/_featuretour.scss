@@ -1,0 +1,361 @@
+
+#features-img-fade {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+#features-tour {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 0 2rem;
+
+}
+
+ul.feature-tour-items {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+    }
+}
+
+.feature-tour-item {
+    position: absolute;
+    margin: 0;
+    padding: 0
+}
+
+.feature-link {
+    background-color: rgba(255,255,255,.1);
+    border: 1px solid $lightxenonblue;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    &:before, &:after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: $lightxenonblue;
+      border-radius: 50%;
+      opacity: .95;
+      animation: pulse 3s ease-out infinite;
+    }
+}
+
+// .feature-link:after {
+//     background-color: $lightxenonblue;
+//     border: 1px solid #fff;
+//     border-radius: 50%;
+//     content: '';
+//     display: block;
+//     width: 15px;
+//     height: 15px;
+//     position: absolute;
+//     top: 11px;
+//     left: 11px;
+//     animation: pulse 6s ease-out infinite;
+// }
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        opacity: .95
+    }
+
+    to {
+        transform: scale(4);
+        opacity: 0
+    }
+}
+
+.feature-link:hover {
+    border-color: $znetblue;
+}
+
+.feature-link:hover:after {
+    background-color: $znetblue;
+}
+
+.feature-content {
+    display: none
+}
+
+
+#feature-ac {
+    top: 18%;
+    left: 50%
+}
+
+#feature-water-sensor {
+    top: 33%;
+    left: 35%
+}
+
+#feature-temp {
+    top: 41%;
+    left: 27%
+}
+
+#feature-door {
+    top: 60%;
+    left: 55%
+}
+
+#feature-smoke-detector {
+    top: 39%;
+    left: 37%
+}
+
+#feature-garage-door {
+    top: 60%;
+    left: 76%
+}
+
+#feature-gas-shutoff {
+    top: 60%;
+    left: 66%
+}
+
+#feature-door-locks {
+    top: 60%;
+    left: 12%
+}
+
+#feature-zwave-controller  {
+    top: 82.5%;
+    left: 10%
+}
+
+#feature-znet-router {
+    top: 82.5%;
+    left: 60%
+}
+
+
+.features-animate .feature-link {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: bounceIn
+}
+
+.features-animate #feature-onetouch .feature-link {
+    animation-delay: 1.5s
+}
+
+.features-animate #feature-simple .feature-link {
+    animation-delay: 1.6s
+}
+
+.features-animate #feature-material .feature-link {
+    animation-delay: 1.7s
+}
+
+.features-animate #feature-design .feature-link {
+    animation-delay: 1.8s
+}
+
+.features-animate #feature-bloom .feature-link {
+    animation-delay: 1.9s
+}
+
+.features-animate #feature-heating .feature-link {
+    animation-delay: 2s
+}
+
+.features-animate #feature-filter .feature-link {
+    animation-delay: 2.1s
+}
+
+.features-animate #feature-safety .feature-link {
+    animation-delay: 2.2s
+}
+
+.features-animate #feature-durability .feature-link {
+    animation-delay: 2.3s
+}
+
+div.hopscotch-bubble {
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.3);
+    border: 0;
+    font-size: .8em;
+    position: absolute;
+    z-index: 999;
+    background-clip: padding-box
+}
+
+div.hopscotch-bubble.animate {
+    transition-property: top,left;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out
+}
+
+div.hopscotch-bubble.invisible {
+    opacity: 0
+}
+
+div.hopscotch-bubble .hopscotch-bubble-container {
+    position: relative;
+    text-align: left;
+    -webkit-font-smoothing: antialiased
+}
+
+div.hopscotch-bubble.no-number .hopscotch-bubble-content {
+    margin: 0
+}
+
+div.hopscotch-bubble .hopscotch-bubble-number {
+    color: $znetblue;
+    border-radius: 50%;
+    border: 2px solid $znetblue;
+    padding: 0;
+    font-size: 20px;
+}
+
+.hopscotch-bubble-content {
+  h2 {
+    font-size: 2.4rem;
+  }
+
+}
+
+div.hopscotch-bubble .hopscotch-bubble-close {
+    overflow: hidden;
+    text-indent: -9999px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: none;
+    background: 0 0;
+    border: 0;
+    color: transparent;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    transition: transform .3s ease;
+    background-image: none;
+    &:hover {
+      box-shadow:none;
+    }
+    &:before, &:after {
+      background: $znetblue;
+      content: '';
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      top: 49%;
+      left: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+}
+
+div.hopscotch-bubble .hopscotch-bubble-arrow-container {
+    position: absolute;
+    width: 18px;
+    height: 9px;
+    margin-left: 4px;
+    overflow: hidden
+}
+
+div.hopscotch-bubble .hopscotch-bubble-arrow-container .hopscotch-bubble-arrow {
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    margin-left: 3px;
+    margin-top: 3px
+}
+
+div.hopscotch-bubble .hopscotch-bubble-arrow-container.up {
+    top: -8px;
+    left: 0
+}
+
+div.hopscotch-bubble .hopscotch-bubble-arrow-container.up .hopscotch-bubble-arrow {
+    box-shadow: 0 0 1px rgba(0,0,0,.3)
+}
+
+div.hopscotch-bubble .hopscotch-bubble-arrow-container.down {
+    bottom: -8px;
+    left: 0
+}
+
+div.hopscotch-bubble .hopscotch-bubble-arrow-container.down .hopscotch-bubble-arrow {
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    position: absolute;
+    top: -9px;
+    left: 0
+}
+
+div.hopscotch-bubble .hopscotch-actions {
+    margin: 2em 0 0;
+    text-align: center
+}
+
+div.hopscotch-bubble .hopscotch-nav-button {
+    font-size: 13px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: black;
+    border: 0;
+    color: $lightxenonblue;
+    outline: 0;
+    padding: 0 1em;
+    margin: 0 1em;
+    transform: none;
+    transition:none;
+
+    &:before {
+      content: none;
+    }
+    &.prev, &.next {
+      border: 0;
+      color: $lightxenonblue;;
+      text-shadow: none;
+      background-color: #FFF;
+      background-image: none;
+      border-radius: 0;
+      &:hover {
+        background-image: none;
+        background-color: #FFF;
+        color: $znetblue;
+      }
+    }
+}
+
+div.hopscotch-bubble .hopscotch-nav-button:hover {
+    color: $znetblue
+}
+@media only screen and (min-width: 1200px) {
+	#feature-door {
+	 left: 47%;
+  }
+  #feature-gas-shutoff {
+    left: 60%;
+  }
+  #feature-garage-door {
+    left: 64%;
+  }
+  #feature-door-locks {
+    left: 9%;
+  }
+  #feature-temp {
+    left: 23%;
+  }
+  #feature-ac {
+    left: 40%;
+  }
+}
